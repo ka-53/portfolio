@@ -1,0 +1,109 @@
+/* Основные стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+/* Шапка сайта */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end; /* Выравниваем элементы по правому краю */
+    padding-right: 100px; /* Отступ от правого края */
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex; /* Для горизонтального расположения элементов */
+    gap: 20px; /* Расстояние между пунктами меню */
+  }
+  
+  nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+
+/* Главная секция */
+#home {
+    text-align: center;
+    padding: 50px;
+    background: #fff;
+}
+
+#home h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+#home h2 {
+    font-size: 1.5rem;
+    color: #555;
+    margin-top: 0.5rem;
+}
+
+#home p {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#home button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+#home button:hover {
+    background-color: #555;
+}
+
+/* Стили для остальных секций */
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+p {
+    font-size: 1rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#contacts a {
+    color: #00aced;
+    text-decoration: none;
+}
+
+#contacts a:hover {
+    text-decoration: underline;
+}
