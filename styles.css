@@ -36,6 +36,13 @@ nav {
     color: #ffffff;
     text-decoration: none;
     font-size: 18px;
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease; /* Плавный переход */
+    padding: 5px 10px; /* Дополнительное пространство для выделения фона */
+  }
+  
+  nav ul li a:hover {
+    /* Увеличение кнопки */
+    text-decoration: underline;
   }
   
 
