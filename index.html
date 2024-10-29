@@ -5,6 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфолио Адилет Каныбек уулу</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        const translations = {
+            ru: {
+                greeting: "Привет, я Адилет Каныбек уулу",
+                jobTitle: "Junior Back-End / Full Stack Разработчик",
+                description: "От элегантного фронтенда до надежных бекенд-решений. Программирование для меня - это не просто работа, а путешествие, наполненное креативностью и решением задач. Давайте свяжемся и обсудим, как я могу помочь в вашем проекте!",
+                downloadResume: "Скачать резюме"
+            },
+            en: {
+                greeting: "Hi, I am Adilet Kanybek uulu",
+                jobTitle: "Junior Back-End / Full Stack Developer",
+                description: "From elegant frontend to reliable backend solutions. For me, programming is not just a job but a journey filled with creativity and problem-solving. Let's get in touch and discuss how I can assist in your project!",
+                downloadResume: "Download Resume"
+            }
+        };
+
+        function switchLanguage(lang) {
+            document.getElementById("greeting").innerText = translations[lang].greeting;
+            document.getElementById("jobTitle").innerText = translations[lang].jobTitle;
+            document.getElementById("description").innerText = translations[lang].description;
+            document.getElementById("downloadResume").innerText = translations[lang].downloadResume;
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -14,15 +37,19 @@
                 <li><a href="aboutme.html">Обо мне</a></li>
                 <li><a href="projects.html">Проекты</a></li>
                 <li><a href="contact.html">Контакты</a></li>
+                <li>
+                    <button onclick="switchLanguage('ru')">RU</button>
+                    <button onclick="switchLanguage('en')">EN</button>
+                </li>
             </ul>
         </nav>
     </header>
     
     <section id="home">
-        <h1>Hi, I Адилет Каныбек уулу</h1>
-        <h2>Junior Back-End / Full Stack Разработчик</h2>
-        <p>От элегантного фронтенда до надежных бекенд-решений. Программирование для меня - это не просто работа, а путешествие, наполненное креативностью и решением задач. Давайте свяжемся и обсудим, как я могу помочь в вашем проекте!</p>
-        <button onclick="window.location.href='resume.pdf'">Скачать резюме</button>
+        <h1 id="greeting">Привет, я Адилет Каныбек уулу</h1>
+        <h2 id="jobTitle">Junior Back-End / Full Stack Разработчик</h2>
+        <p id="description">От элегантного фронтенда до надежных бекенд-решений. Программирование для меня - это не просто работа, а путешествие, наполненное креативностью и решением задач. Давайте свяжемся и обсудим, как я могу помочь в вашем проекте!</p>
+        <button id="downloadResume" onclick="window.location.href='resume.pdf'">Скачать резюме</button>
     </section>
 
 </body>
